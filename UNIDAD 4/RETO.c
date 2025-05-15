@@ -127,3 +127,31 @@ void calcularEstadisticas(char *contenido) {
     printf("Total de espacios: %d\n", espacios);
     printf("Total de líneas: %d\n", lineas);
 }
+
+// Contar la frecuencia de vocales
+
+void contarVocales(char *contenido) {
+    if (contenido == NULL) {
+        printf("No hay texto cargado para analizar.\n");
+        return;
+    }
+
+    int a = 0, e = 0, i = 0, o = 0, u = 0;
+
+    for (int j = 0; contenido[j] != '\0'; j++) {
+        char c = tolower(contenido[j]);
+        if (c == 'a') a++;
+        else if (c == 'e') e++;
+        else if (c == 'i') i++;
+        else if (c == 'o') o++;
+        else if (c == 'u') u++;
+    }
+
+    printf("\nFrecuencia de vocales:\n");
+    printf("a: %d\n", a);
+    printf("e: %d\n", e);
+    printf("i: %d\n", i);
+    printf("o: %d\n", o);
+    printf("u: %d\n", u);
+}
+
