@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -155,6 +156,9 @@ void contarVocales(char *contenido, int *frecuencias) {
     printf("o: %d\n", frecuencias[3]);
     printf("u: %d\n", frecuencias[4]);
 }
+=======
+
+>>>>>>> c8b1dd1202287c3deea527e107aab038c8c6c22c
 
 void reemplazarPalabra(char **contenido, const char *palabraBuscar, const char *palabraReemplazo) {
     if (*contenido == NULL) {
