@@ -56,7 +56,7 @@ y su proposito es principalmente sobre el contenido del texto almacenado dinámi
  Incluyan una tabla por cada función implementada donde se indiquen claramente las variables de entrada y salida:
 
 Tabla de variables
-
+```
 Función: main
 
 Variable                                   Tipo             Rol
@@ -66,14 +66,14 @@ contenido                                  char*            Entrada/Salida: Cont
 tamaño                                     int              Salida: Tamaño del archivo cargado
 caracteres,palabras,espacios,lineas        int              Salida: Estadísticas del texto
 frecuencia de vocales                      int[5]           Salida: Frecuencia de a, e, i, o, u
-
+```
 Funcion:mostrar menu
-
+```
 Variable                                   Tipo             Rol
 -                                          -                solo imprime el menu en pantalla
-
+```
 Funcion:cargar archivo
-
+```
 Variable                                   Tipo             Rol
 
 contenido                                  char**           Salida: Puntero al contenido del archivo
@@ -81,10 +81,10 @@ tamaño                                     int*             Salida: Tamaño del
 nombre del archivo                         char[100]        Entrada: Nombre del archivo a cargar
 archivo                                    FILE*            interna: Manejador de archivo
 *contenido                                 char*            Interna: Almacena contenido leído
-
+```
 
 Funcion:calcular estadistica 
-
+```
 Variable                                   Tipo            Rol
 
 contenido                                  char*           Entrada: Texto cargado
@@ -99,9 +99,9 @@ Variable                                   Tipo           Rol
 contenido                                  char*          Entrada: Texto cargado
 frecuencia                                 int*           Salida: Frecuencia de vocales
 c                                          char           Interna: Caracter en minúscula actual del texto
-
+```
 Funcion:reemplazar palabra
-
+```
 Variable                                              Tipo                Rol
 
 contenido                                             char**              Entrada/Salida: Texto a modificar
@@ -110,10 +110,10 @@ palabrareemplazo                                      const char*         Entrad
 resultado final                                       char*               Interna: Nuevo contenido modificado
 actual, inicio, posicion, destino, temp               char                Internas: Manejo de posición en texto
 lenBuscar, lenReemplazo, ocurrencias, nuevoTamanon    int                 Internas: Cálculos de reemplazo
-
+```
 
 Funcion: guardar resultado
-
+```
 Variable                                             Tipo                 Rol
 
 contenido                                            const char*          Entrada: Texto modificado
@@ -122,13 +122,13 @@ frecuencia de vocales                                int*                 Entrad
 nombreSalida                                         char[100]            Entrada: Nombre del archivo de salida
 salida                                               FILE*                Interna: Manejador del archivo de salida
 
-
+```
 4. Diagramas, esquemas o pseudocódigo:
-    
+
     Inserten cualquier gráfico, diagrama de flujo, estructura modular o pseudocódigo utilizado en el análisis. (Pueden ser imágenes incrustadas si las dibujaron a mano o con herramientas digitales).
-
+   
+```
 inicializar variables
-
 loop:
     mostrarMenu()
     leer opcion
@@ -140,9 +140,8 @@ loop:
              reemplazarPalabra
         5 -> guardarResultados
         6 -> salir del programa
-
-
-5. Lenguaje:
+```
+6. Lenguaje:
     
  Utilicen un lenguaje técnico, claro y conciso. Eviten explicaciones extensas que no aporten al análisis.
 
