@@ -1,0 +1,2 @@
+Este texto de prueba para el archivo Texto1.txt
+Hola diego, bienvenido al curso.
