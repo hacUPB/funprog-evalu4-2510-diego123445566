@@ -3,33 +3,39 @@
     Describan, con sus propias palabras, cómo entendieron el problema, qué decisiones tomaron para resolverlo y por qué.
 
 ENTENDIMIENTO DEL PROBLEMA:
-
- El objetivo era crear un programa en C que permitiera realizar un análisis de texto desde la consola. Esto incluye: cargar un archivo de texto, calcular estadísticas básicas (caracteres, palabras, líneas, espacios), contar la frecuencia de vocales, reemplazar una palabra por otra en el texto, y guardar los resultados en un nuevo archivo.
- 
+```
+ El objetivo era crear un programa en C que permitiera realizar un análisis de texto desde la consola,
+ esto incluye:cargar un archivo de texto, calcular estadísticas básicas (caracteres, palabras, líneas, espacios),
+ contar la frecuencia de vocales, reemplazar una palabra por otra en el texto, y guardar los resultados en un nuevo archivo.
+ ```
 DECISIONES QUE TOME:
-
-Modularizar el código en funciones para hacerlo más organizado y reutilizable.
+```
+Modularice el código en funciones para hacerlo más organizado y reutilizable.
 
 Use una memoria dinamica para manejar archivos de texto de tamaño variable
 
 Utilice estructuras de control para validar entradas y evitar errores en tiempo de ejecución.
 
 Mantuve la simplicidad y eficiencia usando funciones estándar de C (fopen, fread, strstr, etc.).
-
+```
 PORQUE:
-
-Porque busque que el programa fuera flexible, seguro y escalable, capaz de manejar archivos de tamaño variable, que interactuara eficientemente con el usuario que realizara operaciones de análisis sin perder precisión ni modificar el contenido original. La modularización mejora el orden del código, el uso de memoria dinámica lo hace más adaptable, y los métodos manuales para contar y reemplazar brindan control total sobre los resultados.
-
+```
+ Porque busque que el programa fuera flexible, seguro y escalable,
+ capaz de manejar archivos de tamaño variable,
+ que interactuara eficientemente con el usuario que realizara operaciones de análisis
+ sin perder precisión ni modificar el contenido original.
+ La modularización mejora el orden del código, el uso de memoria dinámica lo hace más adaptable,
+ y los métodos manuales para contar y reemplazar brindan control total sobre los resultados.
+```
 2. Estrategia de solución:
     
  Expliquen el enfoque general del código: estructura, módulos o funciones principales, cómo se conectan y cuál es su propósito
 
  Estructura general del código:
-
+```
 El main() gestiona el menú y el ciclo de ejecución.
 
 Cada funcionalidad (cargar archivo, calcular estadísticas, etc.) se implementa como una función independiente.
-
 
 Módulos principales y conexiones:
 
@@ -50,7 +56,7 @@ como se conectan y cual es su proposito:
 las funciones se conectan mediante llamadas desde el main() dependiendo de la opción seleccionada por el usuario.
 
 y su proposito es principalmente sobre el contenido del texto almacenado dinámicamente en un puntero char *contenido
-
+```
 3. Tabla de variables:
     
  Incluyan una tabla por cada función implementada donde se indiquen claramente las variables de entrada y salida:
@@ -143,8 +149,10 @@ loop:
 5. Lenguaje:
     
  Utilicen un lenguaje técnico, claro y conciso. Eviten explicaciones extensas que no aporten al análisis.
-
- Se ha utilizado un enfoque modular y orientado a funciones en lenguaje C. El uso de punteros y memoria dinámica permite manejar archivos de tamaño variable de forma eficiente. Las funciones de la biblioteca estándar aseguran portabilidad y fiabilidad. La validación de entradas y el manejo de errores garantizan robustez.
-
-
+```
+ Se ha utilizado un enfoque modular y orientado a funciones en lenguaje C.
+ El uso de punteros y memoria dinámica permite manejar archivos de tamaño variable de forma eficiente.
+ Las funciones de la biblioteca estándar aseguran portabilidad y fiabilidad.
+ La validación de entradas y el manejo de errores garantizan robustez.
+```
 
