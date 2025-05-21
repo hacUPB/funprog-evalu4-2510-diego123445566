@@ -56,9 +56,9 @@ y su proposito es principalmente sobre el contenido del texto almacenado dinámi
  Incluyan una tabla por cada función implementada donde se indiquen claramente las variables de entrada y salida:
 
 Tabla de variables
-```
-Función: main
 
+Función: main
+```
 Variable                                   Tipo             Rol
 
 opcion                                     int              Entrada del usuario (selección de menú)
@@ -86,12 +86,11 @@ archivo                                    FILE*            interna: Manejador d
 Funcion:calcular estadistica 
 ```
 Variable                                   Tipo            Rol
-
 contenido                                  char*           Entrada: Texto cargado
 caracteres, palabras, espacios, lineas     int*            Salida: Estadísticas del texto
 palabra                                    int             Interna: Flag para identificar inicio de palabra
-
-
+```
+```
 Funcion:contar vocales
 
 Variable                                   Tipo           Rol
@@ -141,7 +140,7 @@ loop:
         5 -> guardarResultados
         6 -> salir del programa
 ```
-6. Lenguaje:
+5. Lenguaje:
     
  Utilicen un lenguaje técnico, claro y conciso. Eviten explicaciones extensas que no aporten al análisis.
 
